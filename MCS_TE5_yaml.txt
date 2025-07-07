@@ -1,0 +1,485 @@
+# TE#5 Original "/usr/local/google/mobileharness/testbeds/amarisoft.yaml"
+
+# TE5
+
+# C10 dvt1.0
+- name: ltp-amarisoft-te5-C10-dev
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 23091FDH30002E
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+# L10
+- name: ltp-amarisoft-te5-l10-dev
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 24141FQHN00075
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+- name: ltp-amarisoft-te5-tg4-dev-billy
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 47041JEBF00258
+    # tg4 billy
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+- name: ltp-amarisoft-te5-sb3-dev
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: telephony_ims_server_simulator
+    type: MiscTestbedSubDevice
+    properties:
+      address: 192.168.100.180
+      port: 12345
+    dimensions:
+      mobly_type: Tiss
+  - id: 31141FDJH0009N
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+- name: ltp-amarisoft-te5-regular
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+
+#P23 - HK3
+  - id: 36271JEKB05192
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - e911
+      - ui
+      - cmas
+      - dsds
+      - networkservice
+      - wifi
+      - dual_nr
+      - data_service
+      - sanity
+      - gfeature_5gpmlpm
+      - gfeature
+      - vowifi
+      - apims
+      carrier: TWM
+
+#M25 - TG4
+  - id: 3B181FDAP0005N
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - e911
+      - ui
+      - cmas
+      - dsds
+      - networkservice
+      - wifi
+      - dual_nr
+      - data_service
+      - sanity
+      - gfeature_5gpmlpm
+      - gfeature
+      - vowifi
+      - apims
+      carrier: TWM
+
+#M24 - AK3
+  - id: 46261JEBF00421
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - e911
+      - ui
+      - cmas
+      - dsds
+      - networkservice
+      - wifi
+      - dual_nr
+      - data_service
+      - sanity
+      - gfeature_5gpmlpm
+      - gfeature
+      - vowifi
+      - apims
+      carrier: TWM
+
+#P25 - FL5
+  - id: 33161FDJG0013Q
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - e911
+      - ui
+      - cmas
+      - dsds
+      - networkservice
+      - wifi
+      - dual_nr
+      - data_service
+      - sanity
+      - gfeature_5gpmlpm
+      - gfeature
+      - vowifi
+      - apims
+      carrier: TWM
+
+#P24 - CM4
+  - id: Disable_Testbed_Daytime
+    type: AndroidRealDevice
+  - id: 4B051FDCR0000G
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - e911
+      - ui
+      - cmas
+      - dsds
+      - networkservice
+      - wifi
+      - dual_nr
+      - data_service
+      - sanity
+      - gfeature_5gpmlpm
+      - gfeature
+      - vowifi
+      - apims
+      carrier: TWM
+
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+# ======== Po Chun's device setup at TE5 =========
+
+- name: ltp-amarisoft-te5-f10-dev
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 32161FDHS0000E
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+# ======== Stan's device setup at TE5 =========
+
+- name: ltp-amarisoft-te5-tk4-dev-stan
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 41061FDAQ0005E
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - sim
+      - sim_daily
+
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+# Public development device. Should not allow adding scope.
+- name: ltp-amarisoft-te5-tg4-dev-stan
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 44291JEBF05251
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+
+      carrier: TWM
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+
+
+
+# ======== Edison's device setup at TE5 =========
+#F10
+- name: ltp-amarisoft-te5-felix-edison
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 2A191FDHS00012
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - sim_daily
+      - sim
+      carrier: TWM
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+
+#P10
+- name: ltp-amarisoft-te5-panther-edison-3
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 23091FDH200033
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - sim
+      carrier: TWM
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+
+#AK3
+- name: ltp-amarisoft-te5-akita-edison
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 36231JEKB00050
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - sim
+      - sim_daily
+      carrier: TWM
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+
+#AK3
+- name: ltp-amarisoft-te5-akita-edison-2
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 36161JEKB08082
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - sim
+      - sim_daily
+      carrier: TWM
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+# P25 MT5 
+- name: ltp-amarisoft-te5-mustang-Lily
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 47121FDCQ0000Q
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - sim
+      - sim_daily
+      carrier: TWM
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+# P25 FL5
+- name: ltp-amarisoft-te5-frankel-Lily
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 48281FDCR0000D
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      carrier: TWM
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
+
+# P23 SB3
+- name: ltp-amarisoft-te5-shiba-Lily
+  devices:
+  - id: amarisoft-te5
+    type: MiscTestbedSubDevice
+    properties:
+      host: 192.168.1.80
+      username: root
+      password: toor
+      port: 22
+    dimensions:
+      mobly_type: Amarisoft
+  - id: 35041FDJH000EV
+    type: AndroidRealDevice
+    dimensions:
+      phone_number: 987654321
+      team: pmw
+      scope:
+      - sim
+      - sim_daily
+      carrier: TWM
+  properties:
+    wifi_ssid: TE5WIFI
+    wifi_password: PASSWORD
+    epdg_address: 192.168.1.80
